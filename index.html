@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>When.js</title>
+    <script src="./when.js"></script>
+  </head>
+  <body>
+    <button onclick="myVar.val += 1">I have been clicked: <span id="btn"></span> times.</button>
+    <script>
+      let myVar = when(0, [(x) => {
+	  document.getElementById("btn").innerText = x
+      }])
+    </script>
+  </body>
+</html>
